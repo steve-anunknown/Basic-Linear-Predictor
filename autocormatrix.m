@@ -10,5 +10,4 @@ function outmatrix = autocormatrix(inrow)
         outmatrix(counter,counter:end) = inrow(1:end-counter+1);
         outmatrix(counter:end,counter) = inrow(1:end-counter+1)';
     end
-    outmatrix = helpful(inrow, length(inrow));
 end
