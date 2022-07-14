@@ -9,6 +9,6 @@ function outmatrix = autocormatrix(inrow)
     for counter = 1:length(inrow)
         outmatrix(counter,counter:end) = inrow(1:end-counter+1);
         outmatrix(counter:end,counter) = inrow(1:end-counter+1)';
-     end
+    end
     outmatrix = helpful(inrow, length(inrow));
 end
